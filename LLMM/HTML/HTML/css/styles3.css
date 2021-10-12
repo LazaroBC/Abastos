@@ -166,4 +166,69 @@ img {
     margin: 0.5em;
 }
 
+/*Eliminar el borde gris que muestran por defecto todos los elementos.*/
+#cabecera,
+#menu,
+#lateral,
+#contenido,
+#contenido #principal,
+#contenido #secundario,
+#pie {
+    border: none;
+}
 
+/*El elemento #menu debe tener un borde inferior de 1 píxel y azul (#004C99).*/
+#menu {
+    border-bottom: 1px solid #004C99;
+}
+
+/*El elemento #noticias muestra un borde de 1 píxel y gris claro (#C5C5C5).*/
+#noticias {
+    border: 1px solid #C5C5C5;
+}
+
+/*El elemento #publicidad debe mostrar un borde discontinuo de 1 píxel y de color #CC6600.*/
+#publicidad {
+    border: 1px dashed #CC6600;
+}
+
+/*El lateral formado por el elemento #secundario muestra un borde de 1 píxel y de color #CC6600.*/
+#contenido #secundario {
+    border: 1px solid #CC6600;
+}
+
+/*El elemento #pie debe mostrar un borde superior y otro inferior de 1 píxel y color gris claro #C5C5C5.*/
+#pie {
+    border-bottom: 1px solid #C5C5C5;
+    border-top:    1px solid #C5C5C5;
+}
+
+/*Los elementos #noticias y #pie tiene un color de fondo gris claro (#F8F8F8).*/
+#noticias,
+#pie {
+    background-color: #F8F8F8;
+}
+
+/*El elemento #publicidad muestra un color de fondo amarillo claro (#FFF6CD).*/
+#publicidad {
+    background-color: #FFF6CD;
+}
+
+/*Los elementos <h2> del lateral #secundario muestran un color de fondo #DB905C y un pequeño padding de .2em.*/
+#secundario h2{
+    background-color: #DB905C ;
+    padding: 0.2em;
+}
+
+/*El fondo del elemento #menu se construye mediante una pequeña imagen llamada fondo_menu.gif.*/
+#menu {
+    background-image: url("../imgs/fondo_menu.gif");
+}
+
+/*El logotipo del sitio se muestra mediante una imagen de fondo del elemento <h1> contenido en el elemento #cabecera (la imagen se llama logo.gif).*/
+#cabecera h1 span{
+    visibility: hidden;
+}
+#cabecera h1{
+    background: url("../imgs/logo.gif") no-repeat -5px -10px;
+}
