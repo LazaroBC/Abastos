@@ -1,0 +1,13 @@
+div {
+    border: 1px solid gray;
+    font-size: large;
+    padding: 1em;
+    padding-bottom: 2.5em;
+    background-color: darkgray;
+}
+div #izquierda {
+    float: left;
+}
+div #derecha {
+    float: right;
+}
