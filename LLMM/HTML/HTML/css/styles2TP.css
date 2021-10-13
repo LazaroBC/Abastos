@@ -1,5 +1,5 @@
 body {
-    background-color: darkgray;
+    background-color: #fff7ff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -11,8 +11,8 @@ h1 {
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1em;
-    background-color: rgb(20, 19, 29);
-    border: 0.3em solid rgb(159, 190, 219);
+    background-color: #376ce2;
+    border: 0.3em solid #00fdff;
     color: white;
 }
 
@@ -25,17 +25,25 @@ h2 {
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1em;
-    border-top: 0.5em solid black;
-    border-left: 0.5em solid black;
-    border-right: 0.5em solid black;
+    border-top: 0.5em solid #bbacff;
+    border-left: 0.5em solid #bbacff;
+    border-right: 0.5em solid #bbacff;
 }
 
 ul {
     margin-top: -1.3em;
     padding-top: 1em;
     padding-bottom: 1em;
-    border-bottom: 0.36em dotted black;
-    border-left: 0.36em dotted black;
-    border-right: 0.36em dotted black;
+    border-bottom: 0.36em dotted #bbacff;
+    border-left: 0.36em dotted #bbacff;
+    border-right: 0.36em dotted #bbacff;
     background-color: rgb(252, 245, 235);
 }
+
+/* 
+.color1 {color: #376ce2;}
+.color2 {color: #8288f7;}
+.color3 {color: #bbacff;}
+.color4 {color: #eed3ff;}
+.color5 {color: #fff7ff;}
+*/
