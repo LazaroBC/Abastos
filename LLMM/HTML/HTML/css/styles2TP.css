@@ -1,0 +1,41 @@
+body {
+    background-color: darkgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    background-color: rgb(20, 19, 29);
+    border: 0.3em solid rgb(159, 190, 219);
+    color: white;
+}
+
+.container {
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+h2 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    border-top: 0.5em solid black;
+    border-left: 0.5em solid black;
+    border-right: 0.5em solid black;
+}
+
+ul {
+    margin-top: -1.3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 0.36em dotted black;
+    border-left: 0.36em dotted black;
+    border-right: 0.36em dotted black;
+    background-color: rgb(252, 245, 235);
+}
