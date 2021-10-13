@@ -206,7 +206,7 @@ img {
 /*Los elementos #noticias y #pie tiene un color de fondo gris claro (#F8F8F8).*/
 #noticias,
 #pie {
-    background-color: #F8F8F8;
+    background: #F8F8F8;
 }
 
 /*El elemento #publicidad muestra un color de fondo amarillo claro (#FFF6CD).*/
@@ -231,4 +231,66 @@ img {
 }
 #cabecera h1{
     background: url("../imgs/logo.gif") no-repeat -5px -10px;
+}
+
+
+/*La fuente base de la página debe ser: color negro, tipo Arial, tamaño 0.9em, interlineado 1.4.*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 0.9em;
+    line-height: 1.4em;
+}
+/*Los elementos <h2> de .articulo se muestran en color #CC6600, con un tamaño de letra de 1.6em, un interlineado de 1.2 y un margen inferior de 0.3em.*/
+.articulo h2 {
+    color: #CC6600;
+    font-size: 1.6em;
+    line-height: 1.2em;
+    margin-bottom: 0.3em;
+}
+/*Los elementos del #menu deben mostrar un margen a su derecha de 1em y los enlaces deben ser de color blanco y tamaño de letra 1.3em.*/
+#menu {
+    padding-right: 1em;
+
+}
+#menu a{
+    margin-right: 1em;
+    color:white;
+    font-size: 1.3em;
+}
+/*El tamaño del texto de todos los contenidos de #lateral debe ser de 0.9em. La fecha de cada noticia debe ocupar el espacio de toda su línea y mostrarse en color gris claro #999. El elemento <h3> de #noticias debe mostrarse de color #003366.*/
+#lateral {
+    font-size: 00.9em;
+    color: #999;
+}
+#noticias .fecha {
+    font-size: 2em;
+}
+#noticias h3 a{
+    color: #003366;
+}
+/*El texto del elemento #publicidad es de color gris oscuro #555 y todos los enlaces de color #CC6600.*/
+#publicidad {
+    color: #555;
+}
+#publicidad a{
+    color: #CC6600;
+}
+/*Los enlaces contenidos dentro de .articulo son de color #CC6600 y todos los párrafos muestran un margen superior e inferior de 0.3em.*/
+.articulo a{
+    color:#CC6600;
+}
+.articulo p{
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+/*Añadir las reglas necesarias para que el contenido de #secundario se vea como en la imagen que se muestra.*/
+#secundario h2{
+    font-size: small;
+
+}
+/*Añadir las reglas necesarias para que el contenido de #pie se vea como en la imagen que se muestra.*/
+#pie {
+    color: #555;
+    font-size: .75em;
 }
