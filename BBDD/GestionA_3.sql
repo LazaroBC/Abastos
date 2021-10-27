@@ -65,7 +65,7 @@ SELECT * FROM oficinas WHERE dir != 108 OR dir IS NULL;
 separar la parte decimal de la parte entera utiliza SIEMPRE el punto.  
 O bien
 Esta solución es más facil de leer e interpretar.*/
-SELECT * FROM empleados WHERE ventas >= 20000 and ventas =< 50000;
+SELECT * FROM empleados WHERE ventas >= 20000 and ventas <= 50000;
 SELECT numemp, nombre, ventas FROM empleados WHERE  ventas BETWEEN 20000 AND 50000;
 /*14. Listar el código y nombre de los empleados que no estén asignados a ninguna oficina.
 La oficina la sacamos para comprobar que salen los que tienen que salir.*/
