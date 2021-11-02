@@ -18,7 +18,7 @@ SELECT * FROM Pedidos WHERE CAST( Fecha AS NVARCHAR(10)) BETWEEN '2013-06-12' AN
 /*9. Mostra el nom dels proveïdors que contenen algun 8 al seu codi.*/
 SELECT NombreProveedor, CodProveedor FROM Proveedores WHERE CodProveedor LIKE'%8%';
 /*10. Mostra el nom i el preu dels productes EN PESSETES (el preu està en euros).*/
-SELECT NombreProducto, ROUND(Precio / 166.39, 2,1) AS 'Precio en EUROS' FROM ProductosPed;
+SELECT NombreProducto, ROUND(Precio * 166.39, 0,1) AS 'Precio en Pesetas' FROM ProductosPed;
 /*11. A ProductosPedido mostra el Número, la referència i la suma de la quantitat més el doble 
 del número de comanda (Sí, ja sé que no té sentit, es per practicar); anomena «Càlcul» al resultat.*/
 SELECT NumPedido, RefeProducto, Cantidad + (NumPedido *2) AS 'Cálculo' FROM ProductosPedido;
