@@ -1,7 +1,7 @@
 tr td{
     border: 0.2em inset palevioletred;
     text-align: center;
-
+width: 40px;
 }
 
 #t1 {
@@ -9,57 +9,7 @@ tr td{
     background-color: rgb(169, 105, 230);
 }
 
-
-/* 
-.grid-container {
-    width: 200px;
-    border: 1em outset palevioletred;
-    background-color: rgb(169, 105, 230);
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-}
-
-.grid-item1 {
-    border: 1em outset palevioletred;
-    background-color: rgb(169, 105, 230);
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.grid-item2 {
-    border: 1em outset palevioletred;
-    background-color: rgb(169, 105, 230);
-    text-align: center;
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
-.grid-item3 {
-    border: 1em outset palevioletred;
-    background-color: rgb(169, 105, 230);
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-.grid-item4 {
-    border: 1em outset palevioletred;
-    background-color: rgb(169, 105, 230);
-    text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 4;
-} 
-
-.grid-item5 {
-    border: 1em outset palevioletred;
-    background-color: rgb(169, 105, 230);
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-.grid-item6 {
-    border: 1em outset palevioletred;
-    background-color: rgb(169, 105, 230);
-    text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 4;
+/* .tabla7 {
+    border-collapse: separate;
+    border-spacing: 0px;
 } */
