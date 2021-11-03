@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    text-align: center;
+}
+
+.tabla1 {
+    width: 50%;
+    border: 0.1em solid black;
+    margin: auto;
+    background-color: rgb(183, 204, 243);
+}
+
+h2{
+    border: 0.1em solid rgb(66, 65, 65);
+    border-radius: 1em ;
+}
+ div {
+    border: 0.1em solid rgb(81, 164, 185);
+    border-radius: 0.3em ;
+ }
+
+ .tabla1{
+    display: grid;
+    grid-column-gap: auto auto auto;
+    line-height: 3em;
+ }
+
+ .item1Tabla1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+ }
