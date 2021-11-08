@@ -2,7 +2,7 @@
 i considera si alguna és millor a les altres.*/
 /*1. Mostra NumPedido, Fecha i NombreProveedor de cada element de la tabla Pedidos.*/
 
-/*2. Mostra les mateixes dades de la consulta anterior, perònomés per al proveïdor TO342.*/
+/*2. Mostra les mateixes dades de la consulta anterior, però només per al proveïdor TO342.*/
 
 /*3. Mostra les mateixes dades de la primera consulta, però només per al proveïdor amb 
 CodPostal 28005 i Numpedido menor que 4.*/
