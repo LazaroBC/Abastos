@@ -1,6 +1,7 @@
 .container {
     display: grid;
     text-align: center;
+    padding-bottom: 2em;
 }
 
 h1 {
@@ -240,4 +241,186 @@ h2 {
     background: rgb(63, 251, 189);
     background: radial-gradient(circle, rgba(63, 251, 189, 1) 0%, rgba(137, 44, 224, 1) 100%);
     grid-column-start: 3;
+}
+
+/* Tabla4 */
+
+.tabla4 {
+    width: 50%;
+    height: 75%;
+    border: 0.1em solid black;
+    margin: auto;
+    background-color: rgb(183, 204, 243);
+    display: grid;
+    line-height: 3em;
+    border: 0.4em outset rgb(81, 164, 185);
+    color: rgb(28, 43, 179);
+    font-weight: bolder;
+    font-size: 1.2em;
+    text-shadow: rgb(230, 13, 165) 3px 2px 2px;
+}
+
+.Tabla4 {
+    display: grid;
+    align-items: center;
+}
+
+.item41 {
+    
+    width: 100%;
+    height: 100%;
+    background: rgb(63, 251, 189);
+    background: radial-gradient(circle, rgba(63, 251, 189, 1) 0%, rgba(137, 44, 224, 1) 100%);
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.item42 {
+   
+    width: 100%;
+    height: 100%;
+    background: rgb(63, 251, 189);
+    background: radial-gradient(circle, rgba(63, 251, 189, 1) 0%, rgba(137, 44, 224, 1) 100%);
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.item43 {
+    
+    width: 100%;
+    height: 100%;
+    background: rgb(63, 251, 189);
+    background: radial-gradient(circle, rgba(63, 251, 189, 1) 0%, rgba(137, 44, 224, 1) 100%);
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.item44 {
+    
+    width: 100%;
+    height: 100%;
+    background: rgb(63, 251, 189);
+    background: radial-gradient(circle, rgba(63, 251, 189, 1) 0%, rgba(137, 44, 224, 1) 100%);
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.item45 {
+    border-radius: 10%;
+    width: 100%;
+    height: 110%;
+    background: rgb(63, 251, 189);
+    background: radial-gradient(circle, rgba(63, 251, 189, 1) 0%, rgba(137, 44, 224, 1) 100%);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    margin-top: -0.27em;
+}
+
+.item46 {
+    border-radius: 10%;
+    width: 100%;
+    height: 110%;
+    background: rgb(63, 251, 189);
+    background: radial-gradient(circle, rgba(63, 251, 189, 1) 0%, rgba(137, 44, 224, 1) 100%);
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    margin-top: -0.27em;
+}
+
+/* Tabla5 */
+
+.tabla5 {
+    width: 50%;
+    height: 75%;
+    border: 0.1em solid black;
+    margin: auto;
+    background-color: rgb(183, 204, 243);
+    display: grid;
+    line-height: 3em;
+    border: 0.4em outset rgb(81, 164, 185);
+    color: rgb(28, 43, 179);
+    font-weight: bolder;
+    font-size: 1.2em;
+    text-shadow: rgb(230, 13, 165) 3px 2px 2px;
+}
+
+.Tabla5 {
+    display: grid;
+    align-items: center;
+}
+
+.item51 {
+    
+    width: 100%;
+    height: 100%;
+    background: rgb(63, 251, 189);
+    background: radial-gradient(circle, rgba(63, 251, 189, 1) 0%, rgba(137, 44, 224, 1) 100%);
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border: 0.5px solid black;
+}
+
+.item52 {
+   
+    width: 100%;
+    height: 100%;
+    background: rgb(63, 251, 189);
+    background: radial-gradient(circle, rgba(63, 251, 189, 1) 0%, rgba(137, 44, 224, 1) 100%);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 0.5px solid black;
+}
+
+.item53 {
+    
+    width: 100%;
+    height: 100%;
+    background: rgb(63, 251, 189);
+    background: radial-gradient(circle, rgba(63, 251, 189, 1) 0%, rgba(137, 44, 224, 1) 100%);
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border: 0.5px solid black;
+}
+
+.item54 {
+    
+    width: 100%;
+    height: 100%;
+    background: rgb(63, 251, 189);
+    background: radial-gradient(circle, rgba(63, 251, 189, 1) 0%, rgba(137, 44, 224, 1) 100%);
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    border: 0.5px solid black;
+}
+
+.item55 {
+    width: 100%;
+    height: 100%;
+    background: rgb(63, 251, 189);
+    background: radial-gradient(circle, rgba(63, 251, 189, 1) 0%, rgba(137, 44, 224, 1) 100%);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    border: 0.5px solid black;
 }
