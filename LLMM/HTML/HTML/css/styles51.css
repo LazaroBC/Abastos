@@ -81,5 +81,6 @@ h1 {
 
 .diasFestivos {
     color: red;
-    font-size: 2em;
+    font-size: 1em;
+    font-weight: bolder;
 }
