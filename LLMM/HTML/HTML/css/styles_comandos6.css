@@ -1,0 +1,11 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+    height: 100%;
+    margin: 2em;
+}
