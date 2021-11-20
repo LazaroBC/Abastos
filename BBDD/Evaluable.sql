@@ -82,6 +82,12 @@ HAVING COUNT(p1.id_libro) <= ALL (SELECT COUNT(p2.id_libro) FROM pide p2 GROUP B
 
 /*10. Llistat amb el total de llibres demanats pels usuaris de cada ciutat, amb subtotals per
 cada usuari i el total absolut de llibres demanats.*/
+SELECT usuarios.usuario, usuarios.nombre, COUNT(pide.id_libro) Total
+FROM usuarios
+INNER JOIN pide ON pide.usuario = usuarios.usuario
+INNER JOIN libros ON libros.id_libro = pide.id_libro
+GROUP BY usuarios.usuario, usuarios.nombre
+
 
 /*11. Mitja de la qualificació que donen als llibres que han demanat els usuaris de
 'Valencia'.*/
