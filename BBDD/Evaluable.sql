@@ -40,12 +40,49 @@ INNER JOIN usuarios ON usuarios.usuario = pide.usuario
 GROUP BY usuarios.usuario, pide.usuario;
 
 /*6. Quantitat total de llibres, independentment del títol, que ha cedit cada usuari.*/
+SELECT cede.usuario, SUM(cantidad) Libros_cedidos
+FROM cede 
+GROUP BY usuario;
+
 /*7. Nom i nombre d’exemplars cedits de cada llibre (només la informació de 'cede',
 ignoreu els llibres de «balance» o de 'cantidad' a la taula 'libros').*/
+SELECT libros.nombre, SUM(cede.cantidad) Cant_cedida
+FROM libros
+INNER JOIN cede ON cede.id_libro = libros.id_libro
+GROUP BY libros.nombre;
+
 /*8. Quin és el llibre/s del que s’han cedit més còpies i quantes son?*/
+
+SELECT libros.nombre, SUM(c1.cantidad) AS Unidades
+FROM libros
+INNER JOIN cede c1 ON libros.id_libro = c1.id_libro
+GROUP BY libros.nombre
+HAVING SUM(c1.cantidad) >= ALL (SELECT SUM(c2.cantidad) FROM cede c2 GROUP BY c2.id_libro);
+
+/* DUDA */ /*¿Por qué esta consulta no da más de un resultado?*/
+SELECT TOP 1 WITH TIES libros.nombre, SUM(cede.cantidad) Cant_cedida
+FROM libros
+INNER JOIN cede ON cede.id_libro = libros.id_libro
+GROUP BY libros.nombre
+ORDER BY Cant_cedida DESC, libros.nombre; 
+
+
 /*9. Quin és el llibre/s del que s’han demanat menys còpies i quantes son?*/
+SELECT TOP 1 WITH TIES libros.nombre, COUNT(pide.id_libro) Pedidos
+FROM libros
+INNER JOIN pide ON libros.id_libro = pide.id_libro
+GROUP BY libros.nombre
+ORDER BY Pedidos ASC;
+
+SELECT libros.nombre, COUNT(p1.id_libro) AS Unidades
+FROM libros
+INNER JOIN pide p1 ON libros.id_libro = p1.id_libro
+GROUP BY libros.nombre
+HAVING COUNT(p1.id_libro) <= ALL (SELECT COUNT(p2.id_libro) FROM pide p2 GROUP BY p2.id_libro);
+
 /*10. Llistat amb el total de llibres demanats pels usuaris de cada ciutat, amb subtotals per
 cada usuari i el total absolut de llibres demanats.*/
+
 /*11. Mitja de la qualificació que donen als llibres que han demanat els usuaris de
 'Valencia'.*/
 /*12. Llistat amb l’usuari o usuaris que han demanat més llibres i quina es eixa quantitat.*/
