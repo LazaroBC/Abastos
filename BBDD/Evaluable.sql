@@ -91,12 +91,27 @@ GROUP BY usuarios.usuario, usuarios.nombre
 
 /*11. Mitja de la qualificació que donen als llibres que han demanat els usuaris de
 'Valencia'.*/
+SELECT usuarios.ciudad, AVG(pide.calificacion) Calificación
+FROM pide
+INNER JOIN usuarios ON usuarios.usuario = pide.usuario
+WHERE usuarios.ciudad = 'Valencia'
+GROUP BY usuarios.ciudad;
 /*12. Llistat amb l’usuari o usuaris que han demanat més llibres i quina es eixa quantitat.*/
+SELECT p1.usuario, COUNT(p1.usuario) Cantidad
+FROM pide p1
+GROUP BY p1.usuario
+HAVING COUNT(p1.usuario) >= ALL (SELECT COUNT(p2.usuario) FROM pide p2 GROUP BY p2.usuario);
+
 /*13. Llistat d’usuaris que son de la mateixa ciutat o ciutats que l’usuari que ha cedit el
 llibre 'RVJ7973'.*/
+
 /*14. Usuari, 'id_libro' i qualificació de les persones que han demanat un llibre al que han
 donat la qualificació més alta que el llibre ha rebut (no =5, la qualificació més alta del
 llibre a la taula 'pide', si només en té una, podria ser inclús un 0).*/
+SELECT p1.usuario, p1.id_libro, p1.calificacion
+FROM pide p1
+WHERE calificacion >= ALL (SELECT MAX(p2.calificacion) FROM pide p2)
+
 /*15. Fes que l’usuari 'ROSIBA' haja cedit 3 còpies del llibre '1984'. Pots triar la qualificació
 que li posa.*/
 /*16. Actualitza TOTS els llibres sense autor per tal que pose 'Anonimo'*/
