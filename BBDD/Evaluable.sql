@@ -104,6 +104,11 @@ HAVING COUNT(p1.usuario) >= ALL (SELECT COUNT(p2.usuario) FROM pide p2 GROUP BY 
 
 /*13. Llistat d’usuaris que son de la mateixa ciutat o ciutats que l’usuari que ha cedit el
 llibre 'RVJ7973'.*/
+SELECT *
+FROM usuarios
+WHERE usuarios.ciudad = ALL (SELECT usuarios.ciudad FROM usuarios 
+						INNER JOIN cede ON cede.usuario = usuarios.usuario
+						WHERE cede.id_libro = 'RVJ7973')
 
 /*14. Usuari, 'id_libro' i qualificació de les persones que han demanat un llibre al que han
 donat la qualificació més alta que el llibre ha rebut (no =5, la qualificació més alta del
@@ -114,10 +119,50 @@ WHERE calificacion >= ALL (SELECT MAX(p2.calificacion) FROM pide p2)
 
 /*15. Fes que l’usuari 'ROSIBA' haja cedit 3 còpies del llibre '1984'. Pots triar la qualificació
 que li posa.*/
+INSERT INTO cede
+			(id_libro
+			,usuario
+			,cantidad
+			,calificacion)
+			VALUES(
+			(SELECT libros.id_libro FROM libros WHERE libros.nombre = '1984')
+			,'ROSIBA'
+			,3
+			,5)
+
 /*16. Actualitza TOTS els llibres sense autor per tal que pose 'Anonimo'*/
+UPDATE libros 
+SET autor = 'Anonimo'
+WHERE autor IS NULL;
+
 /*17. Borra les peticions de llibres de l’usuari 'LUIPAR'.*/
+DELETE FROM pide
+WHERE  usuario = 'LUIPAR';
+
 /*18. Actualitza el 'balance' de cada usuari restant 2 unitats a l’actual.*/
+UPDATE usuarios
+SET balance = balance - 2;
+
 /*19. Actualitza de nou el 'balance' de cada usuari per restar-li a cadascun el nombre de
 llibres que ha demanat.*/
+UPDATE usuarios
+SET balance  = balance - (SELECT COUNT(pide.usuario) FROM pide
+WHERE usuarios.usuario = pide.usuario GROUP BY pide.usuario);
+
 /*20. Actualitza el 'balance' per última vegada per sumar ara la quantitat de llibres que ha
 cedit (si ha cedit 3 còpies d’un mateix llibre conten com a 3, no com a 1).*/
+
+UPDATE usuarios
+SET balance = (SELECT SUM(cantidad)
+  FROM cede
+    WHERE usuarios.usuario = cede.usuario
+      GROUP BY usuario
+	    );
+
+/*DUDA: No termino de entender si la pregunta quiere que se actualicen los datos con la suma de los cedidos o que sume al balance la suma de los cedidos*/ 
+UPDATE usuarios
+SET balance = balance + (SELECT SUM(cantidad)
+  FROM cede
+    WHERE usuarios.usuario = cede.usuario
+      GROUP BY usuario
+	    );

@@ -1,3 +1,5 @@
+-- Funciona sobre la DB Gestion8
+
 /*3. Obtener los datos de los empleados.*/
 SELECT * 
 FROM empleados;

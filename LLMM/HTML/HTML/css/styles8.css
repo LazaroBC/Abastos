@@ -1,0 +1,48 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    margin: 2em;
+}
+header {
+    background-color: gray;
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+nav {
+    background-color: greenyellow;
+}
+
+section {
+    background-color: blue;
+}
+
+article {
+    border: dotted rgb(36, 181, 238);
+    margin: 1rem;
+
+}
+
+ul{
+    color: white;
+    margin-left: -1em;
+}
+p {
+    background-color: white;
+    font-size: small;
+    font-style: oblique;
+    margin-bottom: -0.5px;
+}
+h2 {
+    color: blue;
+    background-color: white;
+    font-size: xx-large;
+    margin-top: -0.5px;
+}
+
+
+
+footer {
+    background-color: gray;
+}
