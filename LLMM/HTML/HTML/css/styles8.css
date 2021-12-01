@@ -8,19 +8,30 @@ header {
     background-color: gray;
     font-size: 5rem;
     font-weight: bolder;
+    position: initial;
 }
 
 nav {
     background-color: greenyellow;
+    position: absolute;
+    left: 70%;
+    right: 39px;
+    height: 200px;
 }
 
 section {
     background-color: blue;
+    position: absolute;
+    left: 39px;
+    right: 30%;
+    height: 200px;
+    overflow: hidden;
 }
 
 article {
     border: dotted rgb(36, 181, 238);
-    margin: 1rem;
+    margin: 2rem;
+
 
 }
 
@@ -45,4 +56,7 @@ h2 {
 
 footer {
     background-color: gray;
+    position:relative;
+    top: 200px;
+
 }
