@@ -1,21 +1,45 @@
 /*Consultes BD ExemplesValora que hi ha diverses consultes que es poden resoldre amb tècniques diferents (Joins,Unions... ) 
 i considera si alguna és millor a les altres.*/
+USE ejemplos;
 /*1. Mostra NumPedido, Fecha i NombreProveedor de cada element de la tabla Pedidos.*/
+SELECT NumPedido, Fecha, NombreProveedor
+    FROM pedidos
+    INNER JOIN Proveedores ON Proveedor =CodProveedor;
 
 /*2. Mostra les mateixes dades de la consulta anterior, però només per al proveïdor TO342.*/
+SELECT NumPedido, Fecha, NombreProveedor
+    FROM pedidos
+    INNER JOIN Proveedores ON Proveedor =CodProveedor
+    WHERE CodProveedor LIKE 'TO342';
 
 /*3. Mostra les mateixes dades de la primera consulta, però només per al proveïdor amb 
 CodPostal 28005 i Numpedido menor que 4.*/
+SELECT NumPedido, Fecha, NombreProveedor
+    FROM pedidos
+    INNER JOIN Proveedores ON Proveedor =CodProveedor
+    WHERE CodPostal LIKE '28005' AND Numpedido < 4;
 
 /*4. Mostra una llista dels elements de ProcuctosPedido amb el preu unitari de cada producte i el 
 preu total de cada fila.*/
+SELECT ProductosPedido.*, ProductosPed.Precio, ProductosPed.precio * ProductosPedido.Cantidad AS 'Precio Total'
+    FROM ProductosPedido
+    INNER JOIN ProductosPed ON ProductosPed.RefeProducto = ProductosPedido.RefeProducto;
 
 /*5. Mostra una llista amb el NumPedido,NombreProducto,Cantidad i Proveedor en les compres 
 fetes al proveïdor TO342.*/
+SELECT Pedidos.NumPedido, NombreProducto, Cantidad, Proveedor
+	FROM Pedidos
+	INNER JOIN ProductosPedido ON ProductosPedido.NumPedido = Pedidos.NumPedido
+	INNER JOIN ProductosPed ON ProductosPed.RefeProducto = ProductosPedido.RefeProducto;
 
 /*6. Mostra els NumPedido dels Pedidos a Proveïdors amb un CodPostal que continga el número 6.*/
+SELECT NumPedido
+    FROM Pedidos
+    INNER JOIN Proveedores ON CodProveedor = Proveedor
+    WHERE CodPostal LIKE '%6%';
 
 /*7. Mostra els NumPedido dels Pedidos a Proveïdors amb un CodPostal que continga el número 6  O que el en el Pedido estiga el producte P3R20.*/
+
 
 /*8. Mostra els NumPedido dels Pedidos a Proveïdors amb un CodPostal que continga el número 6  I que el en el Pedido estiga el producte P3R20.*/
 

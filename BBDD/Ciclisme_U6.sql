@@ -59,3 +59,8 @@ LEFT JOIN ciclistes ON ciclistes.equip = equips.nom
 GROUP BY equips.nom;
 
 /*10. Mostra una llista amb TOTS els equips i el número d’etapes que han guanyat*/
+SELECT equips.nom, COUNT(etapes.ciclista) AS [Etapas Ganadas]
+FROM equips
+LEFT JOIN ciclistes ON ciclistes.equip = equips.nom
+LEFT JOIN etapes ON etapes.ciclista = ciclistes.dorsal
+GROUP BY equips.nom;

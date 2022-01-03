@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(204,204,204);
+    font-family: 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    }
+#p1{
+    background-color: rgb(255,212,128);
+    border: 3px solid rgb(163,133,75); 
+    font-size: 2rem;
+}
+
+#p2{
+    background-color: rgb(128,255,128);
+    border: 3px solid rgb(54,125,54); 
+    font-size: 2rem;
+}
+
+#p3{
+    background-color: rgb(255,255,128);
+    border: 3px solid rgb(214,214,67); 
+    font-size: 2rem;
+}
+
+#p4{
+    background-color: rgb(204,255,255);
+    border: 3px solid rgb(159,198,198); 
+    font-size: 2rem;
+}
+
+#p5{
+    background-color: rgb(255,229,255);
+    border: 3px solid rgb(190,167,190); 
+    font-size: 2rem;
+}
+
+#p6{
+    background-color: rgb(190,167,190);
+    border: 3px solid rgb(132,98,98); 
+    font-size: 2rem;
+}
