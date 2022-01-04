@@ -1,43 +1,95 @@
 body {
     background-color: rgb(204,204,204);
-    font-family: 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Lucida Sans Unicode', 'Trebuchet MS';
 }
 h1 {
     text-align: center;
-    font-size: 5rem;
+    font-size: 3rem;
+    
     }
 #p1{
     background-color: rgb(255,212,128);
     border: 3px solid rgb(163,133,75); 
     font-size: 2rem;
+    text-align: center;
+    width: 80%;
+    height: 10%;
+    position: absolute;
+    top:10%;
+    left:5%;
+    padding-top: 20px;
+    visibility: visible;
 }
 
 #p2{
     background-color: rgb(128,255,128);
-    border: 3px solid rgb(54,125,54); 
+    border: 5px solid rgb(54,125,54); 
     font-size: 2rem;
+    position: absolute;
+    top:40%;
+    left:30%;
+    right: 30%;
+    height:  30%;
+    text-align: center;
+    padding: 10px;
+    z-index: 2;
 }
+
 
 #p3{
     background-color: rgb(255,255,128);
-    border: 3px solid rgb(214,214,67); 
+    border: 5px solid rgb(214,214,67); 
     font-size: 2rem;
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    right: 55%;
+    bottom: 40%;
+    text-align: center;
+    padding: 10px;
 }
 
 #p4{
     background-color: rgb(204,255,255);
-    border: 3px solid rgb(159,198,198); 
+    border: 5px solid rgb(159,198,198); 
     font-size: 2rem;
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    right: 2%;
+    bottom: 40%;
+    text-align: center;
+    padding: 10px;
 }
 
 #p5{
     background-color: rgb(255,229,255);
-    border: 3px solid rgb(190,167,190); 
+    border: 5px solid rgb(190,167,190); 
     font-size: 2rem;
+    position: absolute;
+    top: 60%;
+    left: 2%;
+    right: 55%;
+    bottom: 10%;
+    text-align: center;
+    padding: 10px;
 }
 
 #p6{
-    background-color: rgb(190,167,190);
-    border: 3px solid rgb(132,98,98); 
+    background-color: rgb(255,179,179);
+    border: 5px solid rgb(132,98,98); 
     font-size: 2rem;
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    right: 2%;
+    bottom: 10%;
+    text-align: center;
+    padding: 10px;
 }
+
+
+p:hover {
+    z-index: 3;
+  }
+  
