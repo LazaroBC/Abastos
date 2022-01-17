@@ -1,4 +1,5 @@
 /*EVALUABLE*/
+USE BibliotecaEval;
 /*1. Llistat amb el nom de tots els llibres que ha demanat l’usuari 'JUALOR'.*/
 SELECT libros.nombre
 FROM libros
