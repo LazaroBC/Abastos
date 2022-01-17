@@ -3,8 +3,7 @@
 SELECT libros.nombre
 FROM libros
 INNER JOIN pide ON libros.id_libro = pide.id_libro
-INNER JOIN usuarios ON pide.usuario = usuarios.usuario
-WHERE usuarios.usuario LIKE 'JUALOR';
+WHERE pide.usuario LIKE 'JUALOR';
 
 /*2. Llistat amb el nom i la data de tots els llibres demanats en l’any 2018. */
 SELECT libros.nombre, pide.fecha
