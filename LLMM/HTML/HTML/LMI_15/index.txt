@@ -22,7 +22,7 @@
             <h3>Audacity</h3>
             <p>Audacity es un editor de audio. Permite reproducir, grabar, editar, mezclar, aplicar efectos, etc.</p>
         </div>
-        <div>
+        <div id="id">
             <h3>GIMP</h3>
             <p>GIMP (GNU Image Manipulation Program) es un programa de retoque fotográfico y composición y edición de
                 imágenes.</p>
@@ -82,6 +82,7 @@
                 de forma similar a Mozilla Firefox, puede personalizarse mediante temas y ampliar sus posibilidades mediante extensiones.</p>
         </div>
     </div>
+    
 </body>
 
 </html>

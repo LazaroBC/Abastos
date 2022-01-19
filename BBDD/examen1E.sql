@@ -1,0 +1,3 @@
+--BASE DE DATOS cilisme
+-- 1.- Mostrar el nombre de los puertos de más de 600 m de altura, el total de km de la etapa 
+-- y el nombre del ciclista que ha pasado primero dicho puerto
