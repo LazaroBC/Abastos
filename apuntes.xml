@@ -1,0 +1,85 @@
+<!-- esto es un comentario -->
+<!-- Estrcutura -->
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>> <!--No valida-->
+<!-- Prólogo -->
+<raiz> <!--Elemento Raíz-->
+    <elem_1> <!--Elemento Hijo-->
+        <elem_11 atributo="valor"> <!--Atributo-->
+            <elem_111>Texto elemento 111</elem_111>
+            <elem_112>Texto elemento 111</elem_112>
+        </elem_11>
+    </elem_1>
+    <elem_2>Texto elemento 11</elem_2>
+</raiz>
+
+<?xml version="1.0" encoding="UTF-8"?> <!--Sí valida-->
+<!-- Prólogo -->
+<raiz> <!--Elemento Raíz-->
+    <elem_1> <!--Elemento Hijo-->
+        <elem_11 atributo="valor"> <!--Atributo-->
+            <elem_111>Texto elemento 111</elem_111>
+            <elem_112>Texto elemento 111</elem_112>
+        </elem_11>
+    </elem_1>
+    <elem_2>Texto elemento 11</elem_2>
+</raiz>
+<!-- 
+Correo:
+    ● Remitente: el que envía el correo
+        – Alias
+        – dirección
+    ● Destinatario: el que recibe el correo
+        – Alias
+        – dirección
+    ● Asunto: tema del mismo
+    ● Texto: texto del correo
+– párrafo
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<correo>
+    <remitente>
+        <alias>paco_trabajo</alias>
+        <direccion>paco@paco.es</direccion>
+    </remitente>
+    <destinatario>
+        <alias>ana</alias>
+        <direccion>ana@ana.es</direccion>
+    </destinatario>
+    <asunto>Reunión departamento</asunto>
+    <texto>
+        <parrafo>La reunión será el martes</parrafo>
+    </texto>
+
+</correo>
+
+<!-- 
+Los nombres de los elementos
+    ● Son sensibles a mayúsculas y minúsculas, los de las
+        etiquetas de apertura y cierre deben de ser
+        idénticos.
+    ● Los espacios no están permitidos.
+    ● Permitidos: “-”, ”:”, ”_”, ”.”, todos los caracteres
+        alfabéticos, y los numéricos.
+    ● El nombre debe de comenzar por una letra o por
+        alguno de los siguientes caracteres: “-”, ”:”, ”_”, ”.”
+    ● Se evitarán nombres de elementos que comiencen
+        por XML o por cualquiera de sus letras (X,x,M,m,L,l). 
+-->
+<!-- 
+Los atributos son...
+    ● Son informaciones adicionales asociadas a
+        los elementos.
+    ● Se especifican detrás del nombre del
+        elemento, en la etiqueta de apertura,
+        indicando el nombre de la propiedad y el
+        valor que toma: 
+    -->
+<nombre atributo="valor"> valor elemento </nombre>
+
+<persona tipo="cliente">
+    <nombre> paco </nombre>
+</persona>
+<persona tipo="empleado">
+    <nombre> pedro </nombre>
+</persona>

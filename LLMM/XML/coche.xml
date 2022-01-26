@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<coche>
+    <marca>FORD</marca>
+    <modelo>Mustang</modelo>
+    <motor>3.5</motor>
+    <matricula>ABC123</matricula>
+    <kilometros>12.000</kilometros>
+    <precioInicial>70.000</precioInicial>
+    <precioOferta>69.999</precioOferta>
+    <extras>Climatizador, CD </extras>
+    <fotos>1,png,2.png</fotos>
+</coche>
