@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="ejercicio.xsd"?>
-<recetario autor="Carlos Arguiñano">
+<?xml-model href="ejercicioS2.xsd"?>
+<recetario >
+    <autor>
+        <nombre>Carlos Arguiñano</nombre>
+    </autor>
 
     <plato n="1">
         <nombre>Crema de puerros</nombre>
         <tipo>Cocina española,sopa de fácil elaboración.</tipo>
         <costoCalorias>Bajo coste. Nivel de calorías bajo.</costoCalorias>
         <ingredientes>
-            <ingrediente cantidad="2500" unidad="gramos">Puerros</ingrediente>
-            <ingrediente cantidad="3" unidad="piezas">Patatas</ingrediente>
-            <ingrediente cantidad="3" unidad="cucharadas">Arroz</ingrediente>
-            <ingrediente cantidad="250" unidad="gramos">Pechuga de pollo</ingrediente>
-            <ingrediente cantidad="1" unidad="cucharadas">Mantequilla</ingrediente>
-            <ingrediente cantidad="500" unidad="gramos">Nata líquida</ingrediente>
-            <ingrediente cantidad="gusto">Pimienta molida</ingrediente>
-            <ingrediente cantidad="gusto">Nuez moscada</ingrediente>
+            <ingrediente tipo="1" >Puerros: 2500 gramos</ingrediente>
+            <ingrediente tipo="2" >Patatas: 3 piezas</ingrediente>
+            <ingrediente tipo="3" >Arroz: 3 cucharadas</ingrediente>
+            <ingrediente tipo="4" >Pechuga de pollo: 250 gramos</ingrediente>
+            <ingrediente tipo="5" >Mantequilla: 1 cucharada</ingrediente>
+            <ingrediente tipo="6" >Nata líquida: 500 gramos</ingrediente>
+            <ingrediente tipo="7" >Pimienta molida: gusto</ingrediente>
+            <ingrediente tipo="8" >Nuez moscada: gusto</ingrediente>
         </ingredientes>
-        <referencia></referencia>
+        <referencia>
+
+        </referencia>
         <elaboracion>
             Hervir una hora en la olla los puerros, las patatas, el arroz y el pollo. Añadir una cucharada de
             mantequilla, pasarlo por la batidora y colarlo. Añadir pimienta molida y nuez moscada rallada al gusto,
@@ -30,12 +35,12 @@
         <tipo>Cocina rusa, postre de muy fácil elaboración</tipo>
         <costoCalorias>Bajo coste. Nivel de calorías alto.</costoCalorias>
         <ingredientes>
-            <ingrediente cantidad="1,5" unidad="vasos">Harina</ingrediente>
-            <ingrediente cantidad="4" unidad="cucharadas">Leche entera</ingrediente>
-            <ingrediente cantidad="4" unidad="cucharadas">Levadura</ingrediente>
-            <ingrediente cantidad="3" unidad="gramos">Huevos</ingrediente>
-            <ingrediente cantidad="1" unidad="cucharadas de café">Sal</ingrediente>
-            <ingrediente cantidad="500" unidad="gramos">Mantequilla derretida</ingrediente>
+            <ingrediente tipo="1">Harina: 1,5 vasos</ingrediente>
+            <ingrediente tipo="2">Leche entera: 4 cucharadas</ingrediente>
+            <ingrediente tipo="3">Levadura: 4 cucharadas</ingrediente>
+            <ingrediente tipo="4">Huevos: 3 gramos</ingrediente>
+            <ingrediente tipo="5">Sal: 1 cucharadas de café</ingrediente>
+            <ingrediente tipo="6">Mantequilla derretida: 500 gramos</ingrediente>
         </ingredientes>
         <referencia>
             <web>http://www.platodeldia.com/recetas/?id=8805</web>
@@ -50,19 +55,18 @@
         <tipo>Cocina bizantina, verdura de fácil elaboración</tipo>
         <costoCalorias>Nivel de calorías medio.</costoCalorias>
         <ingredientes>
-            <ingrediente cantidad="4" unidad="piezas">berenjenas pequeñas</ingrediente>
-            <ingrediente>aceite de oliva</ingrediente>
-            <ingrediente cantidad="1" unidad="piezas">cebollas</ingrediente>
-            <ingrediente cantidad="2" unidad="piezas">dientes de ajo</ingrediente>
-            <ingrediente cantidad="2" unidad="piezas">tomates</ingrediente>
-            <ingrediente>sal</ingrediente>
-            <ingrediente>pimienta</ingrediente>
-            <ingrediente>tomillo</ingrediente>
-            <ingrediente>perejil</ingrediente>
-            <ingrediente cantidad="1" unidad="cucharada de cafe">mantequilla</ingrediente>
-            <ingrediente>agua</ingrediente>
+            <ingrediente tipo="1">Berenjenas pequeñas: 4 piezas</ingrediente>
+            <ingrediente tipo="2">aceite de oliva</ingrediente>
+            <ingrediente tipo="3">Cebollas: 1 piezas</ingrediente>
+            <ingrediente tipo="4">Dientes de ajo: 2 piezas</ingrediente>
+            <ingrediente tipo="5">Tomates: 2 piezas</ingrediente>
+            <ingrediente tipo="6">sal</ingrediente>
+            <ingrediente tipo="7">pimienta</ingrediente>
+            <ingrediente tipo="8">tomillo</ingrediente>
+            <ingrediente tipo="9">perejil</ingrediente>
+            <ingrediente tipo="10">Mantequilla: 1 cucharada de café</ingrediente>
+            <ingrediente tipo="11">agua</ingrediente>
         </ingredientes>
-        <referencia></referencia>
         <elaboracion>
         Se lavan las berenjenas y se pelan en bandas longitudinales. Las peladuras, de un centímetro de
         ancho, deben alternarse con la pulpa, también de un centrímetro de grosor. Hacemos en las berenjenas una
@@ -73,7 +77,7 @@
         fuente, con el lado relleno hacia arriba y cubiertas con un poco de mantequilla y agua. Se hornea durante 20
         minutos y listo para servir.
         ***************************************************************
-        </elaboracion>
+    </elaboracion>
     </plato>
 
     <plato n="5">
@@ -81,16 +85,15 @@
         <tipo>Cocina española, entrante de muy fácil preparación</tipo>
         <costoCalorias>Coste bajo.</costoCalorias>
         <ingredientes>
-            <ingrediente cantidad="1" unidad="manojo">espárragos trigueros</ingrediente>
-            <ingrediente cantidad="1/4" unidad="litro">leche</ingrediente>
-            <ingrediente cantidad="3" unidad="cucharadas soperas">mantequilla</ingrediente>
-            <ingrediente cantidad="6" unidad="cucharadas">harina</ingrediente>
-            <ingrediente cantidad="3" unidad="unidades">huevos</ingrediente>
-            <ingrediente cantidad="1" unidad="cucharada de cafe">coñac</ingrediente>
-            <ingrediente>salsa besamel</ingrediente>
-            <ingrediente>sal</ingrediente>
+            <ingrediente tipo="1">Espárragos trigueros: 1 manojo</ingrediente>
+            <ingrediente tipo="2">Leche: 1/4 litro</ingrediente>
+            <ingrediente tipo="3">Mantequilla: 3 cucuaradas soperas</ingrediente>
+            <ingrediente tipo="4">Harina: 6 cucharadas</ingrediente>
+            <ingrediente tipo="5">Huevos: 3 unidades</ingrediente>
+            <ingrediente tipo="6">Coñac: 1 cucharada de café</ingrediente>
+            <ingrediente tipo="7">salsa besamel</ingrediente>
+            <ingrediente tipo="8">sal</ingrediente>
         </ingredientes>
-        <referencia></referencia>
         <elaboracion>
             Mezclar la leche con 2 cucharadas soperas de mantequilla derretida, la harina, los huevos y el coñac.
             Sazonar con sal y dejar reposar durante 30 min. Cortar la parte tierna de los espárragos en trozos pequeños
@@ -99,7 +102,7 @@
             vuelta para que quede dorada por ambos lados. Preparar el resto de las crepes del mismo modo, enrollarlas
             y servirlas con salsa besamel.
             ***************************************************************
-        </elaboracion>
+    </elaboracion>
     </plato>
 
     <plato n="5">
@@ -107,19 +110,18 @@
         <tipo>Cocina española, entrante de muy fácil preparación</tipo>
         <costoCalorias>Coste bajo.</costoCalorias>
         <ingredientes>
-            <ingrediente cantidad="3" unidad="mitades de vaso">harina</ingrediente>
-            <ingrediente cantidad="2">huevos</ingrediente>
-            <ingrediente cantidad="5" unidad="mitades de cucharada sopera">mantequilla</ingrediente>
-            <ingrediente cantidad="6" unidad="cucharadas">aceite de oliva</ingrediente>
-            <ingrediente cantidad="2" unidad="cucharada sopera">huevos</ingrediente>
-            <ingrediente>sal</ingrediente>
-            <ingrediente>pimienta molida</ingrediente>
-            <ingrediente cantidad="8" unidad="cucharadas soperas">mantequilla</ingrediente>
-            <ingrediente cantidad="2" unidad="naranjas">zumo de naranja</ingrediente>
-            <ingrediente cantidad="6" unidad="cucharadas soperas">azúcar</ingrediente>
-            <ingrediente cantidad="1/3" unidad="vaso">licor de Grand Marnier</ingrediente>
+            <ingrediente >Harina: 2 mitades de vaso</ingrediente>
+            <ingrediente >Huevos: 2</ingrediente>
+            <ingrediente >Mantequilla: 5 mitades de cucharadas sopera</ingrediente>
+            <ingrediente >Aceite de oliva: 6 cucharadas</ingrediente>
+            <ingrediente >Huevos: 2 cucharada sopera</ingrediente>
+            <ingrediente >Sal</ingrediente>
+            <ingrediente >Pimienta molida</ingrediente>
+            <ingrediente >Mantequilla: 8 cucharadas soperas</ingrediente>
+            <ingrediente >Zumo de naranja: 2 naranjas</ingrediente>
+            <ingrediente >Azúcar: 6 cucharadas soperas</ingrediente>
+            <ingrediente >Licor de Grand Marnier: 1/3 vaso</ingrediente>
         </ingredientes>
-        <referencia></referencia>
         <elaboracion>
             Batir la harina para crepes, los huevos, el aceite y la sal. Añadir la leche y 1/2 cucharada sopera de
             agua sin dejar de batir. Cuando la masa esté homogénea, dejar de batir y echar en un recipiente. Dejar que
@@ -130,10 +132,10 @@
             servir, calentar el sirope y el Grand Marnier. Echar las crepes dobladas en una sartén. Regar con el sirope
             hirviendo y el Grand Marnier. Flambear.
             ***************************************************************
-        </elaboracion>
+    </elaboracion>
     </plato>
 
     <fecha>
         26 de Abril de 2006
-        </fecha>
+    </fecha>
 </recetario>

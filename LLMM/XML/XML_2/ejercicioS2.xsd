@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="recetario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="autor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="plato" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string" />
+              <xs:element name="tipo" type="xs:string" />
+              <xs:element name="costoCalorias" type="xs:string" />
+              <xs:element name="ingredientes">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ingrediente" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="tipo" type="xs:integer">
+                              <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                  <xs:enumeration value="1" />
+                                  <xs:enumeration value="10" />
+                                  <xs:enumeration value="11" />
+                                  <xs:enumeration value="2" />
+                                  <xs:enumeration value="3" />
+                                  <xs:enumeration value="4" />
+                                  <xs:enumeration value="5" />
+                                  <xs:enumeration value="6" />
+                                  <xs:enumeration value="7" />
+                                  <xs:enumeration value="8" />
+                                  <xs:enumeration value="9" />
+                                </xs:restriction>
+                              </xs:simpleType>
+                            </xs:attribute>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="referencia" minOccurs="0">
+                <xs:complexType mixed="true">
+                  <xs:sequence minOccurs="0">
+                    <xs:element name="web" minOccurs="0" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="elaboracion" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="n" type="xs:integer" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="fecha" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

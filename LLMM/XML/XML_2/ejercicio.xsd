@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="recetario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="plato" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string" />
+              <xs:element name="tipo" type="xs:string" />
+              <xs:element name="costoCalorias" type="xs:string" />
+              <xs:element name="ingredientes">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ingrediente" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="cantidad" />
+                            <xs:attribute name="unidad" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="referencia" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence minOccurs="0">
+                    <xs:element name="web" minOccurs="0" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="elaboracion" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="n" type="xs:integer" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="fecha" type="xs:string" />
+      </xs:sequence>
+      <xs:attribute name="autor" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
