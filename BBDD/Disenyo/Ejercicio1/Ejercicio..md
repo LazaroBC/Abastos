@@ -7,19 +7,19 @@ consideres oportunos) necesario para representar dicha información.**
 <hr>
 
 * Entidad AAVV
-  * <u>Número de registro</u>
-  * Nombre
-  * Dirección
-  * Teléfono
-  * Email
+  * <u>Número de registro</u> [Entero]
+  * Nombre [Carácter 25]
+  * Dirección [Carácter 50]
+  * Teléfono [Entero]
+  * Email [Carácter 50]
   
 * Entidad miembros
-  * <u>Número de socio</u>
-  * Nombre
-  * Apellidos
-  * Dirección
-  * Teléfono
-  * Email
+  * <u>Número de socio</u> [Entero]
+  * Nombre [Carácter 25]
+  * Apellidos [Carácter 50]
+  * Dirección [Carácter 50]
+  * Teléfono [Entero]
+  * Email [Carácter 50]
 
 <img src="Ejercicio1.jpg" width=50%>
 

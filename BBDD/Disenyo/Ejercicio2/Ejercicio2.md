@@ -26,36 +26,37 @@ representar dicha información.**
 <hr>
 
 * Entidad Sucursal
-  * Código sucursal
-  * Dirección
-  * Télefono
+  * <u>Código sucursal</u> [Entero]
+  * Dirección [Carácter 20]
+  * Télefono [Entero]
 * Entidad Hotel
-  * Código hotel
-  * Nombre
-  * Dirección
-  * Ciudad
-  * Télefono
-  * Nº de plazas disponibles
+  * <u>Código hotel</u> [Carácter 20]
+  * Nombre [Carácter 50]
+  * Dirección [Carácter 50]
+  * Ciudad [Carácter 20]
+  * Teléfono [Entero]
+  * Nº de plazas disponibles [Entero]
 * Entidad Vuelos
-  * Nº de vuelo
-  * Fecha
-  * Hora
-  * Origen
-  * Destino
-  * Plazas primera
-  * Plazas turista
+  * <u>Nº de vuelo</u> [Carácter 7]
+  * Fecha [Fecha]
+  * Origen [Carácter 20]
+  * Destino [Carácter 20]
+  * Plazas primera [Entero]
+  * Plazas turista [Entero]
 * Entidad Turista
-  * Código turista
-  * Nombre
-  * Apellidos
-  * Dirección
-  * Teléfono
-  * Codigo sucursal
-  * Nº de vuelo
-  * Tipo de plaza
+  * <u>Código turista</u> [Carácter 20]
+  * Nombre [Carácter 20]
+  * Apellidos [Carácter 20]
+  * Dirección [Carácter 20]
+  * Teléfono [Entero]
+  * Codigo sucursal [Entero]
+  * Nº de vuelo [Carácter 7]
+  * Tipo de plaza [Carácter 15]
 * Hospedaje
-  * Código turista
-  * Código hotel
-  * Régimen hospedaje
-  * Fecha llegada
-  * Fecha salida
+  * <u>Código turista</u> [Carácter 20]
+  * <u>Código hotel</u> [Carácter 20]
+  * Régimen hospedaje [Carácter 20]
+  * Fecha llegada [Fecha]
+  * Fecha salida [Fecha]
+
+<img src="Ejercicio%202.drawio.png" width="70%">
