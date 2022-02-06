@@ -1,0 +1,107 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!DOCTYPE libro [
+    <!ELEMENT libro (descripcion+)>
+    <!ELEMENT descripcion (codigo_ISBN,titulo,nivel+,autores,editorial,fecha,web,precio)>
+    <!ELEMENT nivel (tratamiento)>
+    <!ELEMENT codigo_ISBN (#PCDATA)>
+    <!ELEMENT tratamiento (#PCDATA)>
+    <!ELEMENT autores (#PCDATA)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT editorial (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT web (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+]>
+<libro>
+    <descripcion>
+        <codigo_ISBN>9788408249856</codigo_ISBN>
+        <titulo></titulo>
+        <nivel>
+            <tratamiento>Básico</tratamiento>
+        </nivel>
+        <autores>Paloma Sánchez-Garnica</autores>
+        <editorial>Planeta</editorial>
+        <fecha>04/11/2021</fecha>
+        <web>https://www.casadellibro.com/libro-ultimos-dias-en-berlin-finalista-premio-planeta-2021/9788408249856/12603050</web>
+        <precio>21.75</precio>
+    </descripcion>
+    <descripcion>
+        <codigo_ISBN>9788408249856</codigo_ISBN>
+        <titulo></titulo>
+        <nivel>
+            <tratamiento>Básico</tratamiento>
+        </nivel>
+        <autores>Paloma Sánchez-Garnica</autores>
+        <editorial>Planeta</editorial>
+        <fecha>04/11/2021</fecha>
+        <web>https://www.casadellibro.com/libro-ultimos-dias-en-berlin-finalista-premio-planeta-2021/9788408249856/12603050</web>
+        <precio>21.75</precio>
+    </descripcion>
+    <descripcion>
+        <codigo_ISBN>9788408249856</codigo_ISBN>
+        <titulo></titulo>
+        <nivel>
+            <tratamiento>Básico</tratamiento>
+        </nivel>
+        <autores>Paloma Sánchez-Garnica</autores>
+        <editorial>Planeta</editorial>
+        <fecha>04/11/2021</fecha>
+        <web>https://www.casadellibro.com/libro-ultimos-dias-en-berlin-finalista-premio-planeta-2021/9788408249856/12603050</web>
+        <precio>21.75</precio>
+    </descripcion>
+    <descripcion>
+        <codigo_ISBN>9788408249856</codigo_ISBN>
+        <titulo></titulo>
+        <nivel>
+            <tratamiento>Básico</tratamiento>
+        </nivel>
+        <autores>Paloma Sánchez-Garnica</autores>
+        <editorial>Planeta</editorial>
+        <fecha>04/11/2021</fecha>
+        <web>https://www.casadellibro.com/libro-ultimos-dias-en-berlin-finalista-premio-planeta-2021/9788408249856/12603050</web>
+        <precio>21.75</precio>
+    </descripcion>
+    <descripcion>
+        <codigo_ISBN>9788408249856</codigo_ISBN>
+        <titulo></titulo>
+        <nivel>
+            <tratamiento>Básico</tratamiento>
+        </nivel>
+        <autores>Paloma Sánchez-Garnica</autores>
+        <editorial>Planeta</editorial>
+        <fecha>04/11/2021</fecha>
+        <web>https://www.casadellibro.com/libro-ultimos-dias-en-berlin-finalista-premio-planeta-2021/9788408249856/12603050</web>
+        <precio>21.75</precio>
+    </descripcion>
+    <descripcion>
+        <codigo_ISBN>9788408249856</codigo_ISBN>
+        <titulo></titulo>
+        <nivel>
+            <tratamiento>Básico</tratamiento>
+        </nivel>
+        <autores>Paloma Sánchez-Garnica</autores>
+        <editorial>Planeta</editorial>
+        <fecha>04/11/2021</fecha>
+        <web>https://www.casadellibro.com/libro-ultimos-dias-en-berlin-finalista-premio-planeta-2021/9788408249856/12603050</web>
+        <precio>21.75</precio>
+    </descripcion>
+</libro>
+
+<!-- Crea un documento bien formado que contenga la descripción de 5
+libros. Tenemos que mostrar información sobre libros en nuestra página
+web. Nos ofrecen un servicio donde a partir de un tema nos devolverán
+un fichero XML con información de los libros encontrados en diferentes
+librerias electrónicas relacionados con esa temática. Nos piden que
+escribamos un documento XML bien formado como ejemplo. con
+información de libros encontrados en varias librerias electrónicas
+(amazon, y la casa del libro por ejemplo) sobre la temática 'XML'. Como
+mínimo sobre cada libro necesitaremos:
+ Código ISBN
+ Título
+ Nivel de profundidad en el tratamiento de la materia (básico, intermedio,avanzado)
+ Autores
+ Editorial
+ Fecha de publicación
+ Página web del libro en caso de que tenga.
+ Precio
+ -->

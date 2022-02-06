@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coche [
+    <!ELEMENT coche (vehiculo+)>
+    <!ELEMENT vehiculo (marca,modelo,motor,matricula,kilometros,precioInicial,precioOferta,extras,fotos)>
+    <!ELEMENT marca (#PCDATA)>
+    <!ELEMENT modelo (#PCDATA)>
+    <!ELEMENT motor (#PCDATA)>
+    <!ELEMENT matricula (#PCDATA)>
+    <!ELEMENT kilometros (#PCDATA)>
+    <!ELEMENT precioInicial (#PCDATA)>
+    <!ELEMENT precioOferta (#PCDATA)>
+    <!ELEMENT extras (#PCDATA)>
+    <!ELEMENT fotos (#PCDATA)>
+]>
 <coche>
     <vehiculo>
         <marca>FORD</marca>
