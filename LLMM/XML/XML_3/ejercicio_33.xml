@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recetario [
+    <!ELEMENT recetario (plato+,fecha)>
+    <!ATTLIST recetario
+	autor CDATA #FIXED "Carlos Arguiñano">
+    <!ELEMENT plato (nombre,tipo,costoCalorias,ingredientes,referencia,elaboracion)>
+    <!ELEMENT ingredientes (ingrediente+)>
+    <!ATTLIST plato 
+        n (1 | 2 | 3 | 4 | 5) #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT costoCalorias (#PCDATA)>
+    <!ELEMENT ingrediente (#PCDATA)>
+    <!ATTLIST ingrediente
+        cantidad CDATA #IMPLIED
+        unidad CDATA #IMPLIED>
+    <!ELEMENT referencia (web?)>
+    <!ELEMENT elaboracion (#PCDATA)>
+    <!ELEMENT web (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+]>
 <recetario autor="Carlos Arguiñano">
 
     <plato n="1">
@@ -15,7 +35,7 @@
             <ingrediente cantidad="gusto">Pimienta molida</ingrediente>
             <ingrediente cantidad="gusto">Nuez moscada</ingrediente>
         </ingredientes>
-        <referencia></referencia>
+        <referencia><web></web></referencia>
         <elaboracion>
             Hervir una hora en la olla los puerros, las patatas, el arroz y el pollo. Añadir una cucharada de
             mantequilla, pasarlo por la batidora y colarlo. Añadir pimienta molida y nuez moscada rallada al gusto,
@@ -61,7 +81,7 @@
             <ingrediente cantidad="1" unidad="cucharada de cafe">mantequilla</ingrediente>
             <ingrediente>agua</ingrediente>
         </ingredientes>
-        <referencia></referencia>
+        <referencia><web></web></referencia>
         <elaboracion>
         Se lavan las berenjenas y se pelan en bandas longitudinales. Las peladuras, de un centímetro de
         ancho, deben alternarse con la pulpa, también de un centrímetro de grosor. Hacemos en las berenjenas una
@@ -89,7 +109,7 @@
             <ingrediente>salsa besamel</ingrediente>
             <ingrediente>sal</ingrediente>
         </ingredientes>
-        <referencia></referencia>
+        <referencia><web></web></referencia>
         <elaboracion>
             Mezclar la leche con 2 cucharadas soperas de mantequilla derretida, la harina, los huevos y el coñac.
             Sazonar con sal y dejar reposar durante 30 min. Cortar la parte tierna de los espárragos en trozos pequeños
@@ -118,7 +138,7 @@
             <ingrediente cantidad="6" unidad="cucharadas soperas">azúcar</ingrediente>
             <ingrediente cantidad="1/3" unidad="vaso">licor de Grand Marnier</ingrediente>
         </ingredientes>
-        <referencia></referencia>
+        <referencia><web></web></referencia>
         <elaboracion>
             Batir la harina para crepes, los huevos, el aceite y la sal. Añadir la leche y 1/2 cucharada sopera de
             agua sin dejar de batir. Cuando la masa esté homogénea, dejar de batir y echar en un recipiente. Dejar que
@@ -134,5 +154,5 @@
 
     <fecha>
         26 de Abril de 2006
-        </fecha>
+    </fecha>
 </recetario>

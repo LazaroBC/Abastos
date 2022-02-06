@@ -1,138 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recetario autor="Carlos Arguiñano">
+<!DOCTYPE coche [
+    <!ELEMENT coche (vehiculo+)>
+    <!ELEMENT vehiculo (marca,modelo,motor,matricula,kilometros,precioInicial,precioOferta,extras,fotos)>
+    <!ELEMENT marca (#PCDATA)>
+    <!ELEMENT modelo (#PCDATA)>
+    <!ELEMENT motor (#PCDATA)>
+    <!ELEMENT matricula (#PCDATA)>
+    <!ELEMENT kilometros (#PCDATA)>
+    <!ELEMENT precioInicial (#PCDATA)>
+    <!ELEMENT precioOferta (#PCDATA)>
+    <!ELEMENT extras (#PCDATA)>
+    <!ELEMENT fotos (#PCDATA)>
+]>
+<coche>
+    <vehiculo>
+        <marca>FORD</marca>
+        <modelo>Mustang</modelo>
+        <motor>3.5</motor>
+        <matricula>ABC123</matricula>
+        <kilometros>12.000</kilometros>
+        <precioInicial>70.000</precioInicial>
+        <precioOferta>69.999</precioOferta>
+        <extras>Climatizador, CD </extras>
+        <fotos>1.png,2.png</fotos>
+    </vehiculo>
+    <vehiculo>
+        <marca>RENAULT</marca>
+        <modelo>Clio</modelo>
+        <motor>2.0</motor>
+        <matricula>ABD123</matricula>
+        <kilometros>12.000</kilometros>
+        <precioInicial>70.000</precioInicial>
+        <precioOferta>69.999</precioOferta>
+        <extras>Climatizador, CD </extras>
+        <fotos>1.png,2.png</fotos>
+    </vehiculo>
+    <vehiculo>
+        <marca>Mercedes Benz</marca>
+        <modelo>EQS</modelo>
+        <motor>3.5</motor>
+        <matricula>ABE123</matricula>
+        <kilometros>12.000</kilometros>
+        <precioInicial>70.000</precioInicial>
+        <precioOferta>69.999</precioOferta>
+        <extras>Climatizador, CD </extras>
+        <fotos>1.png,2.png</fotos>
+    </vehiculo>
+    <vehiculo>
+        <marca>Alpine</marca>
+        <modelo>A110 GT</modelo>
+        <motor>4.5</motor>
+        <matricula>ABF123</matricula>
+        <kilometros>12.000</kilometros>
+        <precioInicial>70.000</precioInicial>
+        <precioOferta>69.999</precioOferta>
+        <extras>Climatizador, CD </extras>
+        <fotos>1.png,2.png</fotos>
+    </vehiculo>
+    <vehiculo>
+        <marca>SEAT</marca>
+        <modelo>Ibiza</modelo>
+        <motor>2.0</motor>
+        <matricula>ABG123</matricula>
+        <kilometros>12.000</kilometros>
+        <precioInicial>70.000</precioInicial>
+        <precioOferta>69.999</precioOferta>
+        <extras>Climatizador, CD </extras>
+        <fotos>1.png,2.png</fotos>
+    </vehiculo>
+</coche>
 
-    <plato n="1">
-        <nombre>Crema de puerros</nombre>
-        <tipo>Cocina española,sopa de fácil elaboración.</tipo>
-        <costoCalorias>Bajo coste. Nivel de calorías bajo.</costoCalorias>
-        <ingredientes>
-            <ingrediente cantidad="2500" unidad="gramos">Puerros</ingrediente>
-            <ingrediente cantidad="3" unidad="piezas">Patatas</ingrediente>
-            <ingrediente cantidad="3" unidad="cucharadas">Arroz</ingrediente>
-            <ingrediente cantidad="250" unidad="gramos">Pechuga de pollo</ingrediente>
-            <ingrediente cantidad="1" unidad="cucharadas">Mantequilla</ingrediente>
-            <ingrediente cantidad="500" unidad="gramos">Nata líquida</ingrediente>
-            <ingrediente cantidad="gusto">Pimienta molida</ingrediente>
-            <ingrediente cantidad="gusto">Nuez moscada</ingrediente>
-        </ingredientes>
-        <referencia></referencia>
-        <elaboracion>
-            Hervir una hora en la olla los puerros, las patatas, el arroz y el pollo. Añadir una cucharada de
-            mantequilla, pasarlo por la batidora y colarlo. Añadir pimienta molida y nuez moscada rallada al gusto,
-            mezclar nata líquida 1 caja, dejando un poco para adornar las tazas al servir junto con un poco de la
-            pechuga muy menudita.
-            ***************************************************************
-        </elaboracion>
-    </plato>
-    <plato n="2">
-        <nombre>Blinis</nombre>
-        <tipo>Cocina rusa, postre de muy fácil elaboración</tipo>
-        <costoCalorias>Bajo coste. Nivel de calorías alto.</costoCalorias>
-        <ingredientes>
-            <ingrediente cantidad="1,5" unidad="vasos">Harina</ingrediente>
-            <ingrediente cantidad="4" unidad="cucharadas">Leche entera</ingrediente>
-            <ingrediente cantidad="4" unidad="cucharadas">Levadura</ingrediente>
-            <ingrediente cantidad="3" unidad="gramos">Huevos</ingrediente>
-            <ingrediente cantidad="1" unidad="cucharadas de café">Sal</ingrediente>
-            <ingrediente cantidad="500" unidad="gramos">Mantequilla derretida</ingrediente>
-        </ingredientes>
-        <referencia>
-            <web>http://www.platodeldia.com/recetas/?id=8805</web>
-        </referencia>
-        <elaboracion>
-            **************************************************************
-        </elaboracion>
-    </plato>
-
-    <plato n="3">
-        <nombre>Berenjenas al Imán</nombre>
-        <tipo>Cocina bizantina, verdura de fácil elaboración</tipo>
-        <costoCalorias>Nivel de calorías medio.</costoCalorias>
-        <ingredientes>
-            <ingrediente cantidad="4" unidad="piezas">berenjenas pequeñas</ingrediente>
-            <ingrediente>aceite de oliva</ingrediente>
-            <ingrediente cantidad="1" unidad="piezas">cebollas</ingrediente>
-            <ingrediente cantidad="2" unidad="piezas">dientes de ajo</ingrediente>
-            <ingrediente cantidad="2" unidad="piezas">tomates</ingrediente>
-            <ingrediente>sal</ingrediente>
-            <ingrediente>pimienta</ingrediente>
-            <ingrediente>tomillo</ingrediente>
-            <ingrediente>perejil</ingrediente>
-            <ingrediente cantidad="1" unidad="cucharada de cafe">mantequilla</ingrediente>
-            <ingrediente>agua</ingrediente>
-        </ingredientes>
-        <referencia></referencia>
-        <elaboracion>
-        Se lavan las berenjenas y se pelan en bandas longitudinales. Las peladuras, de un centímetro de
-        ancho, deben alternarse con la pulpa, también de un centrímetro de grosor. Hacemos en las berenjenas una
-        incisión lateral a través de la cual se extraer , con ayuda de una cucharilla, un cuarto de su pulpa. Se doran
-        las berenjenas en aceite caliente durante 3 minutos y se retiran. En el mismo aceite se rehogan la cebollas y
-        los ajos picados. Se añaden los tomates, pelados y troceados, la pulpa de las berenjenas, el perejil y tomillo.
-        Salpimentar y cocer durante 15 minutos. Se rellenan las berenjenas con esta mezcla y se disponen en una
-        fuente, con el lado relleno hacia arriba y cubiertas con un poco de mantequilla y agua. Se hornea durante 20
-        minutos y listo para servir.
-        ***************************************************************
-        </elaboracion>
-    </plato>
-
-    <plato n="5">
-        <nombre>Crepes de Espárragos</nombre>
-        <tipo>Cocina española, entrante de muy fácil preparación</tipo>
-        <costoCalorias>Coste bajo.</costoCalorias>
-        <ingredientes>
-            <ingrediente cantidad="1" unidad="manojo">espárragos trigueros</ingrediente>
-            <ingrediente cantidad="1/4" unidad="litro">leche</ingrediente>
-            <ingrediente cantidad="3" unidad="cucharadas soperas">mantequilla</ingrediente>
-            <ingrediente cantidad="6" unidad="cucharadas">harina</ingrediente>
-            <ingrediente cantidad="3" unidad="unidades">huevos</ingrediente>
-            <ingrediente cantidad="1" unidad="cucharada de cafe">coñac</ingrediente>
-            <ingrediente>salsa besamel</ingrediente>
-            <ingrediente>sal</ingrediente>
-        </ingredientes>
-        <referencia></referencia>
-        <elaboracion>
-            Mezclar la leche con 2 cucharadas soperas de mantequilla derretida, la harina, los huevos y el coñac.
-            Sazonar con sal y dejar reposar durante 30 min. Cortar la parte tierna de los espárragos en trozos pequeños
-            y rehogar en el resto de mantequilla durante 10 min. Mezclar con la masa de las crepes. Derretir un poco de
-            mantequilla en una sartén pequeña, echar 2 cucharadas de la masa de crepes y cuando esté cocida darle la
-            vuelta para que quede dorada por ambos lados. Preparar el resto de las crepes del mismo modo, enrollarlas
-            y servirlas con salsa besamel.
-            ***************************************************************
-        </elaboracion>
-    </plato>
-
-    <plato n="5">
-        <nombre>Crepes de Espárragos</nombre>
-        <tipo>Cocina española, entrante de muy fácil preparación</tipo>
-        <costoCalorias>Coste bajo.</costoCalorias>
-        <ingredientes>
-            <ingrediente cantidad="3" unidad="mitades de vaso">harina</ingrediente>
-            <ingrediente cantidad="2">huevos</ingrediente>
-            <ingrediente cantidad="5" unidad="mitades de cucharada sopera">mantequilla</ingrediente>
-            <ingrediente cantidad="6" unidad="cucharadas">aceite de oliva</ingrediente>
-            <ingrediente cantidad="2" unidad="cucharada sopera">huevos</ingrediente>
-            <ingrediente>sal</ingrediente>
-            <ingrediente>pimienta molida</ingrediente>
-            <ingrediente cantidad="8" unidad="cucharadas soperas">mantequilla</ingrediente>
-            <ingrediente cantidad="2" unidad="naranjas">zumo de naranja</ingrediente>
-            <ingrediente cantidad="6" unidad="cucharadas soperas">azúcar</ingrediente>
-            <ingrediente cantidad="1/3" unidad="vaso">licor de Grand Marnier</ingrediente>
-        </ingredientes>
-        <referencia></referencia>
-        <elaboracion>
-            Batir la harina para crepes, los huevos, el aceite y la sal. Añadir la leche y 1/2 cucharada sopera de
-            agua sin dejar de batir. Cuando la masa esté homogénea, dejar de batir y echar en un recipiente. Dejar que
-            repose durante 1 h. Repartir la masa en medidas de 1 cazo y freir en dos sartenes al mismo tiempo. A
-            medida que se vayan haciendo, reservar calientes, preferiblemente al baño María. Tapar con papel de
-            aluminio. Para el sirope, derretir la mantequilla en un cazo con el azúcar, el zumo de naranja y unas cuantas
-            ralladuras de naranja y la mitad del Grand Marnier. Calentar la otra mitad en otro cazo. Cuando se vaya a
-            servir, calentar el sirope y el Grand Marnier. Echar las crepes dobladas en una sartén. Regar con el sirope
-            hirviendo y el Grand Marnier. Flambear.
-            ***************************************************************
-        </elaboracion>
-    </plato>
-
-    <fecha>
-        26 de Abril de 2006
-        </fecha>
-</recetario>
+<!-- Crea un documento bien formado que contenga la descripción de 5
+vehículos, con la información descrita más abajo Imaginemos un
+concesionario de coches que periódicamente debe enviar información
+sobre los vehículos que tiene en oferta a un portal publicitario de
+compra-venta de coches. La información que debe enviar es:
+ La marca
+ El modelo
+ Motor
+ Matrícula
+ Kilómetros
+ Precio original
+ Precio oferta
+ Extras
+fotos -->
