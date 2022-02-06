@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<todos>
+  <persona n="p1">
+    <nombre>Juan</nombre>
+    <apellidos>Salveri</apellidos>
+  </persona>
+  <persona n="p2">
+    <nombre>Juana</nombre>
+    <apellidos>Salveria</apellidos>
+  </persona>
+</todos>
+
+<!-- <?xml version="1.0" encoding="UTF-8"?><todos>
+  <persona n="p1">
+    <nombre>Juan
+    <apellidos>Salveri</apellidos>
+  </persona>
+  <persona n=p2>
+    <nombre>Juana
+    <apellidos>Salveria</apellidos></nombre>
+  </persona> -->

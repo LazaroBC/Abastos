@@ -25,33 +25,56 @@ FROM etapes
 INNER JOIN ciclistes ON etapes.ciclista = ciclistes.dorsal
 INNER JOIN equips ON equips.nom = ciclistes.equip
 GROUP BY equips.nom
-ORDER BY equips.nom;
+ORDER BY COUNT(etapes.numero) DESC;
 
 -- 5.- Nombre de los compañeros de equipo del ciclista con el mallot amarillo en la 1ª etapa.
-SELECT DISTINCT nom
+SELECT nom
 FROM ciclistes
-LEFT JOIN portar ON ciclistes.dorsal =  portar.ciclista
-WHERE ciclistes.equip = ALL (SELECT ciclistes.equip FROM ciclistes
+WHERE ciclistes.equip = (SELECT ciclistes.equip FROM ciclistes
 INNER JOIN portar ON portar.ciclista = ciclistes.dorsal
-WHERE portar.etapa = 1 AND portar.mallot = 'MGE');
+INNER JOIN mallots ON mallots.codi = portar.mallot
+WHERE portar.etapa = 1 AND mallots.color = 'groc');
 
-
-
--- 5.- Bajar la cantidad de todos los premnios del mallot a la mitad.
+-- 6.- Bajar la cantidad de todos los premios del mallot a la mitad.
 UPDATE mallots
 SET premi = premi/2;
 
 -- 7.- Crea un procedimiento almacenado que reciba el número de etapa y el color de un mallot 
 -- y permita guardar en una variable el nombre del ciclista ganador en esa etapa.
--- USE ciclisme;
--- IF object_id('C_Ganador','P') IS NOT NULL  DROP PROC C_Ganador;
--- GO
--- CREATE PROCEDURE C_Ganador @etap INT
--- AS
--- SELECT 
+USE ciclisme;
+IF object_id('C_Ganador','P') IS NOT NULL  DROP PROC C_Ganador;
+GO
+CREATE PROCEDURE C_Ganador @etap INT, @mall varchar(10), @ganador varchar(25) OUTPUT 
+AS
+SET @ganador = (SELECT nom  
+FROM ciclistes 
+INNER JOIN portar ON portar.ciclista = ciclistes.dorsal
+INNER JOIN mallots ON mallots.codi = portar.mallot 
+WHERE portar.etapa = @etap AND mallots.color = @mall);
+GO
+DECLARE @var varchar(25);
+EXEC C_Ganador 2, 'verd', @var OUTPUT;
+PRINT @var;
 
+-- 8.-Crea un procedimiento almacenado que muestre el premio total en metálico que ha ganado cada equipo usando un cursor. 
 
-
--- 8.-Crea un procedimiento almacenado que muestre el premio total en metálico que ha ganado cada equipo suando un cursor. 
-
-
+USE ciclisme;
+IF object_id('premio','P') IS NOT NULL  DROP PROC premio;
+GO
+CREATE PROCEDURE  premio
+AS
+DECLARE premios CURSOR FOR SELECT equip, SUM(premi) Total
+FROM ciclistes 
+INNER JOIN portar ON portar.ciclista = ciclistes.dorsal
+INNER JOIN mallots ON mallots.codi = portar.mallot 
+GROUP BY equip;
+OPEN premios;
+FETCH NEXT FROM premio;
+WHILE @@FETCH_STATUS = 0
+    BEGIN 
+        FETCH NEXT FROM premio;
+    END;
+CLOSE premio;
+DEALLOCATE premio;
+GO
+EXEC premio;
