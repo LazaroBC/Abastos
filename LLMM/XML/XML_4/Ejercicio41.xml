@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Ejercicio41.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<coche>
+    <vehiculo>
+        <marca>FORD</marca>
+        <modelo>Mustang</modelo>
+        <motor>3.5</motor>
+        <matricula>ABC123</matricula>
+        <kilometros>12.000</kilometros>
+        <precioInicial>70.000</precioInicial>
+        <precioOferta>69.999</precioOferta>
+        <extras>Climatizador, CD </extras>
+        <fotos>1.png,2.png</fotos>
+    </vehiculo>
+    <vehiculo>
+        <marca>RENAULT</marca>
+        <modelo>Clio</modelo>
+        <motor>2.0</motor>
+        <matricula>ABD123</matricula>
+        <kilometros>12.000</kilometros>
+        <precioInicial>70.000</precioInicial>
+        <precioOferta>69.999</precioOferta>
+        <extras>Climatizador, CD </extras>
+        <fotos>1.png,2.png</fotos>
+    </vehiculo>
+    <vehiculo>
+        <marca>Mercedes Benz</marca>
+        <modelo>EQS</modelo>
+        <motor>3.5</motor>
+        <matricula>ABE123</matricula>
+        <kilometros>12.000</kilometros>
+        <precioInicial>70.000</precioInicial>
+        <precioOferta>69.999</precioOferta>
+        <extras>Climatizador, CD </extras>
+        <fotos>1.png,2.png</fotos>
+    </vehiculo>
+    <vehiculo>
+        <marca>Alpine</marca>
+        <modelo>A110 GT</modelo>
+        <motor>4.5</motor>
+        <matricula>ABF123</matricula>
+        <kilometros>12.000</kilometros>
+        <precioInicial>70.000</precioInicial>
+        <precioOferta>69.999</precioOferta>
+        <extras>Climatizador, CD </extras>
+        <fotos>1.png,2.png</fotos>
+    </vehiculo>
+    <vehiculo>
+        <marca>SEAT</marca>
+        <modelo>Ibiza</modelo>
+        <motor>2.0</motor>
+        <matricula>ABG123</matricula>
+        <kilometros>12.000</kilometros>
+        <precioInicial>70.000</precioInicial>
+        <precioOferta>69.999</precioOferta>
+        <extras>Climatizador, CD </extras>
+        <fotos>1.png,2.png</fotos>
+    </vehiculo>
+</coche>
